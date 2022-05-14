@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title={Title}>
+        <lightning-layout multiple-rows>
+            <lightning-layout-item padding="around-medium" size="12">
+                <lightning-input type = "number" label = "Enter Weight" placeholder="Enter your weight in kg" onchange={onWeightChange}></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-medium" size="12">
+                <lightning-input type = "number" label = "Enter Height" placeholder="Enter your height in mt" onchange={onHeightChange}></lightning-input>
+            </lightning-layout-item>
+             <lightning-layout-item padding="around-medium" size="12">
+                <p>
+                    Your BMI is : {Result}
+                </p>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-medium" size="12">
+                <lightning-button label="Calculate" onclick={bmiHandler}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>  
+    </lightning-card>  
+</template>
